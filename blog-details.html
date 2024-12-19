@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Blog Details - Active Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Active
+  * Template URL: https://bootstrapmade.com/active-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="blog-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Блог.</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Головна</a></li>
+          <li><a href="about.html">Цікаве</a></li>
+          <li><a href="services.html">Послуги</a></li>
+          <li><a href="portfolio.html">Порфоліо</a></li>
+          <li><a href="team.html">Відгуки</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li class="dropdown"><a href="#"><span>Меню</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Меню 1</a></li>
+              <li class="dropdown"><a href="#"><span>Спадне Меню</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Спадне Меню 1</a></li>
+                  <li><a href="#">Спадне Меню 2</a></li>
+                  <li><a href="#">Спадне Меню 3</a></li>
+                  <li><a href="#">Спадне Меню 4</a></li>
+                  <li><a href="#">Спадне Меню 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Спадне Меню 2</a></li>
+              <li><a href="#">Спадне Меню 3</a></li>
+              <li><a href="#">Спадне Меню 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>Деталі блогу</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Дім</a></li>
+            <li class="current">Деталі блогу</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8">
+
+          <!-- Blog Details Section -->
+          <section id="blog-details" class="blog-details section">
+            <div class="container">
+
+              <article class="article">
+
+                <div class="post-img">
+                <img src="data:image/jpeg;base64,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" class="img-fluid" alt="">
+                </div>
+
+                <h2 class="title">Інформація про кінотеатр </h2>
+
+                <div class="meta-top">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">Джон Дохан </a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Грудень.1.2024</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12 відгуків</a></li>
+                  </ul>
+                </div><!-- End meta top -->
+
+                <div class="content">
+                <h3>IMAX Лазер 2D</h3>  
+                <p>
+                    Сеанс у форматі з найсильнішим ефектом присутності та занурення (без окулярів)
+                  </p>
+                  <h3>IMAX Лазер 3D</h3>  
+                  <p>
+                    Сеанс у форматі з найсильнішим ефектом присутності та занурення
+                  </p>
+
+           
+                    <h3>Atmos</h3>  
+                    <p>
+                      64 канали та спеціальна геометрія залу гарантують точність позиціонування звуку та ефект присутност
+                    </p>
+                  
+                  <h3>3D</h3>  
+                  <p>
+                    Cеанс з залученням технологій об’ємного зображення для прихильників видовищних спец ефектів
+                  </p>
+
+                  <h3>LUX</h3>  
+                  <p>
+                    Сеанс на кріслах-реклайнерах, що забезпечують підвищений комфорт перегляду для гурманів кіно
+                  </p>
+                
+
+                  <h3>SDH</h3>
+                  <p>
+                    Субтитри для осіб з порушеннями слуху та тифлокоментарі для осіб з порушеннями зору
+                  </p>
+                  <h3>UaSUB</h3>
+                  <p>
+                    Сеанс із українськими субтитрами
+                  </p>
+
+                </div><!-- End post content -->
+
+          
+
+              </article>
+
+            </div>
+          </section><!-- /Blog Details Section -->
+
+          <!-- Blog Comments Section -->
+          <section id="blog-comments" class="blog-comments section">
+
+            <div class="container">
+
+              <h4 class="comments-count">8 Відгуків</h4>
+
+              <div id="comment-1" class="comment">
+                <div class="d-flex">
+                  <div class="comment-img"><img src="assets/img/blog/comments-1.jpg" alt=""></div>
+                  <div>
+                    <h5><a href="">Джорджія Рідr</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2020-01-01">03.02.2022</time>
+                    <p>
+                      Комфортний і сучасний кінотеатр з усіма вигодами. Великі кінозали з м‘якими і зручними кріслами, чудовий звук. Є можливість сховати свої речі в шкафчик, а одяг віддати в гардероб. Приємний персонал, на території мультиплексу є зони на очікування з комфортними диванами. Великий вибір фільмів у кілька сеансів. Діють електронні білети, а також акції на партнерські знижки.
+
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End comment #1 -->
+
+              <div id="comment-2" class="comment">
+                <div class="d-flex">
+                  <div class="comment-img"><img src="assets/img/blog/comments-2.jpg" alt=""></div>
+                  <div>
+                    <h5><a href="">Рон Альварадо</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2020-01-01">27.07.2020</time>
+                    <p>
+                      Шикарний кінотеатр, особливо зали категоріі Lux - дуже зручні крісла , що мають можливість регулювання ; сподобвася  якісний переклад фільмів украінською мовою . Єдине , що  трохи напружує - це можливість істи в залі - попкорн та напоі  ще куди не йшло, а от  обід з трьох страв під час сеансу , коли   при перегляді стрічки чути  дзенькіт виделок та ножів і жмакання /чавкання  - це вже занадто )
+                    </p>
+                  </div>
+                </div>
+
+                <div id="comment-reply-1" class="comment comment-reply">
+                  <div class="d-flex">
+                    <div class="comment-img"><img src="assets/img/blog/comments-3.jpg" alt=""></div>
+                    <div>
+                      <h5><a href="">Лінда Смолл</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                      <time datetime="2020-01-01">09.05.2024</time>
+                      <p>
+                        Чудове місце, комфорт та якісне обслуговування.
+                        Персонал дуже вічливий. Під час повітряної тривоги, вимкнули перегляд фільму. Кошти за сеанс повернули через три дні як і сказали.
+                        Все чудово, окрім проклятої тривоги і світла.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div id="comment-reply-2" class="comment comment-reply">
+                    <div class="d-flex">
+                      <div class="comment-img"><img src="assets/img/blog/comments-4.jpg" alt=""></div>
+                      <div>
+                        <h5><a href="">Сіанна Рамзі</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                        <time datetime="2020-01-01">21.11.2024</time>
+                        <p>
+                          Кінотеатр дуже класний в залі чисто та затишно, IMAX дуже класна якість супер всім пропоную сходити в цей кінотеатр та IMAX 👍👍👍
+                        </p>
+                      </div>
+                    </div>
+
+                  </div><!-- End comment reply #2-->
+
+                </div><!-- End comment reply #1-->
+
+              </div><!-- End comment #2-->
+
+              <div id="comment-3" class="comment">
+                <div class="d-flex">
+                  <div class="comment-img"><img src="assets/img/blog/comments-5.jpg" alt=""></div>
+                  <div>
+                    <h5><a href="">Нолан Девідсон</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2020-01-01">17.04.2023</time>
+                    <p>
+                      Дуже крутий кінотеатр!!!! Емоцій море! Дизайн вражаючий. Все дуже сподобалося! Коштує своїх грошей.
+                    </p>
+                  </div>
+                </div>
+
+              </div><!-- End comment #3 -->
+
+              <div id="comment-4" class="comment">
+                <div class="d-flex">
+                  <div class="comment-img"><img src="assets/img/blog/comments-6.jpg" alt=""></div>
+                  <div>
+                    <h5><a href="">Кей Дагган</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2020-01-01">13.08.2021</time>
+                    <p>
+                      Наш улюблений кінотеатр. Найбільш сучасний та зручний. Багато залів, багато сеансів. Гарні пропозиції на Пепсі+попкорн. Поряд великий супер-маркет "Сільпо" та фудкорт. Можна і фільм подивитися і кави попити після. Ввічливий персонал. Буваємо тут дуже часто. Жодних проблем не виникало.
+                    </p>
+                  </div>
+                </div>
+
+              </div><!-- End comment #4 -->
+
+            </div>
+
+          </section><!-- /Blog Comments Section -->
+
+          <!-- Comment Form Section -->
+          <section id="comment-form" class="comment-form section">
+            <div class="container">
+
+              <form action="">
+
+                <h4>Опублікувати коментар</h4>
+                <p>Ваша електронна адреса не буде опублікована. Обов'язкові поля позначені * </p>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name*">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input name="email" type="text" class="form-control" placeholder="Your Email*">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col form-group">
+                    <input name="website" type="text" class="form-control" placeholder="Your Website">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col form-group">
+                    <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Опублікувати коментар</button>
+                </div>
+
+              </form>
+
+            </div>
+          </section><!-- /Comment Form Section -->
+
+        </div>
+
+        <div class="col-lg-4 sidebar">
+
+          <div class="widgets-container">
+
+            <!-- Blog Author Widget -->
+     
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+          <div class="widget">
+            <h3 class="widget-heading">По нас</h3>
+            <p class="mb-4">
+            
+            </p>
+            <p class="mb-0">
+              <a href="#" class="btn-learn-more">Дізнатися більше</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ps-lg-5 mb-3 mb-md-0">
+          <div class="widget">
+            <h3 class="widget-heading">Нвігація</h3>
+            <ul class="list-unstyled float-start me-5">
+              <li><a href="#">Огляд</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Знайти кінотеатр у вашому місті </a></li>
+            </ul>
+            <ul class="list-unstyled float-start">
+              <li><a href="#">Огляд</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Послуги</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="widget-heading">Останні дописи</h3>
+            <ul class="list-unstyled footer-blog-entry">
+              <li>
+                <span class="d-block date">05.12.24</span>
+                <a href="#">Там живуть сліпі тексти</a>
+              </li>
+              <li>
+                <span class="d-block date">05.11.2024</span>
+              
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="widget-heading">Контакти</h3>
+            <ul class="list-unstyled social-icons light mb-3">
+              <li>
+                <a href="#"><span class="bi bi-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-twitter-x"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-linkedin"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-google"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-google-play"></span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <div class="footer-subscribe">
+              <h3 class="widget-heading">Підпишіться</h3>
+              <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="mb-2">
+                  <input type="text" class="form-control" name="email" placeholder="Enter your email">
+
+                  <button type="submit" class="btn btn-link">
+                    <span class="bi bi-arrow-right"></span>
+                  </button>
+                </div>
+                <div class="loading">Зачекайте </div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Ваш запит на підписку надіслано. дякую!
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+        <p>© <span>Авторське право</span> <strong class="px-1 sitename">Блог Деталі.</strong> <span>Всі права захищено</span></p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Розробила <a href="#telegram">Даша Шерстюк </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

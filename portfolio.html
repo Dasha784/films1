@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Active Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Active
+  * Template URL: https://bootstrapmade.com/active-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Порфоліо.</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Головна</a></li>
+          <li><a href="about.html">Цікаве</a></li>
+          <li><a href="services.html">Послуги</a></li>
+          <li><a href="portfolio.html">Порфоліо</a></li>
+          <li><a href="team.html">Відгуки</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li class="dropdown"><a href="#"><span>Меню</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Меню 1</a></li>
+              <li class="dropdown"><a href="#"><span>Спадне Меню</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Спадне Меню 1</a></li>
+                  <li><a href="#">Спадне Меню 2</a></li>
+                  <li><a href="#">Спадне Меню 3</a></li>
+                  <li><a href="#">Спадне Меню 4</a></li>
+                  <li><a href="#">Спадне Меню 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Спадне Меню 2</a></li>
+              <li><a href="#">Спадне Меню 3</a></li>
+              <li><a href="#">Спадне Меню 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>Порфоліо</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Головна</a></li>
+            <li class="current">Порфоліо</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Все</li>
+            <li data-filter=".filter-app">Додаток</li>
+            <li data-filter=".filter-product">Картка</li>
+            <li data-filter=".filter-branding">Інтернет</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="data:image/jpeg;base64,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" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Зал 1</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="https://f.kyivmaps.com/photo/5351/h4Mq-.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Зал 2</h4>
+                
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="https://lh3.googleusercontent.com/proxy/uz9sqAP_IkVca52INQYhbU9FUvDsZQMI1QFQUHWvvF2mIHdsKb7EkVJ2vD7yvRth_RjPtpPIGglKZK0Nkj8ahc7M1c5iya2CppVXCm2bc1_J1Idzzv6zOUYN2Ig" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Зал 3</h4>
+            
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="https://multiplex.ua/images/69/72/697296ef1707f4928ba09512188ceeca.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Зал 4</h4>
+        
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="https://his.ua/img/articles/Fw_5ij1PI2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Холл кинотеатра Multiplex в ЦУМ</h4>
+            
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="https://multiplex.ua/images/43/23/4323124b8b884a40e44351a852d13435.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Холл кинотеатра Multiplex в ЦУМ</h4>
+          
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="https://multiplex.ua/images/9b/9c/9b9c7add5e551f0935d746d83b4d75c9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Кінотеатр MULTIPLEX у
+                  ТРЦ "Lavina"</h4>
+            
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="https://multiplex.ua/images/b6/a6/b6a6a8b91d5c7957d9ebdf3c30a098f1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Кінотеатр MULTIPLEX у
+                  ТРЦ "Lavina"</h4>
+             
+                <a href="https://multiplex.ua/images/b6/a6/b6a6a8b91d5c7957d9ebdf3c30a098f1.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="https://rau.ua/wp-content/uploads/2021/11/skufinsky-116.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4> Multiplex в ТРЦ Respublika Park </h4>
+               
+                <a href="https://rau.ua/wp-content/uploads/2021/11/skufinsky-116.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <h1>Відгуки </h1>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure class="img-wrap">
+                      <img src="assets/img/testimonials/testimonials-1.jpg" alt="Image" class="img-fluid">
+                    </figure>
+                    <h3 class="name">Адам Андерсон</h3>
+                    <blockquote>
+                      <p>
+                        “Якщо IMAX то тільки тут.
+                        Дуже зручно що кінотеатр знаходиться в новому, великому ТРЦ. Часто поєднуємо шопінг з візитом в кіно, і навпаки.
+                        
+                        Подобається сучасний і стильний зал очікування, виключно зручні місця в залах. Проекція картинки, і звук чудові 👍
+                        
+                        Написати відгук мене спонукала допомога з обміном квитків. Адміністратори просто врятували наш вечір. Ваша клієнтоорієнтованість на висоті. Дякую!”
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure class="img-wrap">
+                      <img src="assets/img/testimonials/testimonials-2.jpg" alt="Image" class="img-fluid">
+                    </figure>
+                    <h3 class="name">Лукас Девлін</h3>
+                    <blockquote>
+                      <p>
+                        “Ми сім’єю обожнюємо цей кінотеатр🔥
+                        Сучасно, релакласовий останній ряд, з яких не хочеться вставати)
+                        Дітям дуже подобається, що можна самим набрати Пепсі, вибрати смаколики.
+                        Релакс забезпечений)…”
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure class="img-wrap">
+                      <img src="assets/img/testimonials/testimonials-3.jpg" alt="Image" class="img-fluid">
+                    </figure>
+                    <h3 class="name">Кайла Брайант</h3>
+                    <blockquote>
+                      <p>
+                        “Хороший кінотеатр як і вся мережа
+                        Особлива подяка адміністратору  який допоміг з обміном квитків , які були куплені онлайн але переплутали  при виборі локації . Він врятував вечір.
+                        Дякую вам за гарно наданий сервіс ! Як завжди”
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+          <div class="widget">
+            <h3 class="widget-heading">По нас</h3>
+            <p class="mb-4">
+            
+            </p>
+            <p class="mb-0">
+              <a href="#" class="btn-learn-more">Дізнатися більше </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ps-lg-5 mb-3 mb-md-0">
+          <div class="widget">
+            <h3 class="widget-heading">Нвігація</h3>
+            <ul class="list-unstyled float-start me-5">
+              <li><a href="#">Огляд</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Знайти кінотеатр у вашому місті </a></li>
+            </ul>
+            <ul class="list-unstyled float-start">
+              <li><a href="#">Огляд</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Послуги</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="widget-heading">Останні дописи</h3>
+            <ul class="list-unstyled footer-blog-entry">
+              <li>
+                <span class="d-block date">05.12.24</span>
+                <a href="#">Там живуть сліпі тексти</a>
+              </li>
+              <li>
+                <span class="d-block date">05.11.2024</span>
+              
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="widget-heading">Контакти</h3>
+            <ul class="list-unstyled social-icons light mb-3">
+              <li>
+                <a href="#"><span class="bi bi-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-twitter-x"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-linkedin"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-google"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-google-play"></span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <div class="footer-subscribe">
+              <h3 class="widget-heading">Підпишіться</h3>
+              <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="mb-2">
+                  <input type="text" class="form-control" name="email" placeholder="Enter your email">
+
+                  <button type="submit" class="btn btn-link">
+                    <span class="bi bi-arrow-right"></span>
+                  </button>
+                </div>
+                <div class="loading">Зачекайте </div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Ваш запит на підписку надіслано. дякую!
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+        <p>© <span>Авторське право</span> <strong class="px-1 sitename">Порфоліо.</strong> <span>Всі права захищено</span></p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Розробила <a href="#telegram">Даша Шерстюк </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
